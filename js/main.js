@@ -5,5 +5,7 @@ async function getAcudit() {
     },
   })
     .then((response) => response.json())
-    .then((data) => console.log(data));
+    .then((data) => {
+      document.getElementById("acudit").innerHTML = data.joke;
+    });
 }
