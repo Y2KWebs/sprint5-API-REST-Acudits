@@ -14,11 +14,32 @@
     <title>Acudits</title>
   </head>
   <body>
-    <div class="container">
-      <h2>Tiempo en Barcelona</h2>
+    <div
+      class="container-fluid vh-100"
+      style="
+        background-image: url(https://happypeoplebarcelona.com/wp-content/uploads/2018/06/daniel-corneschi-627754-unsplash-1620x810.jpg);
+        background-position-x: center;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <div
+        class="shadow-lg card text-center h-50 w-50 top-50 start-50 translate-middle"
+      >
+        <div class="card-header" id="tiempo"></div>
+        <div class="card-body">
+          <h5 class="card-title">Preparat per ruire?</h5>
+          <p class="card-text" id="acudit"></p>
+          <a href="#" class="btn btn-primary" onclick="getAcudit()"
+            >Següent acudit</a
+          >
+        </div>
+      </div>
+
       <div class="mb-5" id="tiempo"></div>
-      <button onclick="getAcudit()">Següent acudit</button>
-      <h4 id="acudit"></h4>
+
+      <h4></h4>
     </div>
   </body>
 </html>
