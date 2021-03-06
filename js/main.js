@@ -1,12 +1,19 @@
 async function getAcudit() {
-  await fetch("https://icanhazdadjoke.com/", {
+  const apiUrl =
+    Math.random() <= 0.5
+      ? "https://icanhazdadjoke.com/"
+      : "http://api.icndb.com/jokes/random";
+
+  await fetch(apiUrl, {
     headers: {
       Accept: "application/json",
     },
   })
     .then((response) => response.json())
     .then((data) => {
-      document.getElementById("acudit").innerHTML = data.joke;
+      apiUrl;
+      document.getElementById("acudit").innerHTML =
+        data.joke || data.value.joke;
     });
 }
 
