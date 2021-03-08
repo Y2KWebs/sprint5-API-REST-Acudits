@@ -2,7 +2,7 @@ async function getAcudit() {
   const apiUrl =
     Math.random() <= 0.5
       ? "https://icanhazdadjoke.com/"
-      : "http://api.icndb.com/jokes/random";
+      : "https://api.icndb.com/jokes/random";
 
   await fetch(apiUrl, {
     headers: {
@@ -20,7 +20,7 @@ async function getAcudit() {
 async function getTiempo() {
   let str = "";
   await fetch(
-    "http://api.openweathermap.org/data/2.5/weather?q=barcelona&units=metric&appid=6c35df700d93402106941f4d54f5a5a1"
+    "https://api.openweathermap.org/data/2.5/weather?q=barcelona&units=metric&appid=6c35df700d93402106941f4d54f5a5a1"
   )
     .then((response) => response.json())
     .then((data) => {
