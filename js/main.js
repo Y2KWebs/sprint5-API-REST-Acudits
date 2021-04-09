@@ -24,14 +24,10 @@ async function getTiempo() {
   )
     .then((response) => response.json())
     .then((data) => {
-      str += `Temp: ${data.main.temp}° - `;
-      str += `Mínima: ${data.main.temp_min}° - `;
-      str += `Máxima: ${data.main.temp_max}° - `;
-      str += `Humedad: ${data.main.humidity}`;
-      str += `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png"></img>`;
+      str = `Avui a Barcelona: Temp: ${data.main.temp}° - Mínima: ${data.main.temp_min}° - Máxima: ${data.main.temp_max}° - Humedad: ${data.main.humidity} <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png"></img>`;
     });
 
-  document.getElementById("tiempo").innerHTML = "Avui a Barcelona: " + str;
+  document.getElementById("tiempo").innerHTML = str;
 }
 
 getTiempo();
