@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/main.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <title>Acudits</title>
+  </head>
+  <body>
+    <div
+      class="container-fluid vh-100"
+      style="
+        background-image: url(https://happypeoplebarcelona.com/wp-content/uploads/2018/06/daniel-corneschi-627754-unsplash-1620x810.jpg);
+        background-position-x: center;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <div  
+        class="shadow-lg card w-75 text-center top-50 start-50 translate-middle"
+      >
+        <div class="card-header" id="tiempo"></div>
+        <div class="card-body ">
+          <h3 class="card-title p-2">Preparat per ruire?</h5>
+          <p class="card-text p-2" id="acudit"></p>
+          <a href="#" class="btn btn-primary p-2" onclick="getAcudit()"
+            >Següent acudit</a
+          >
+        </div>
+      </div>
+
+      <div class="mb-5" id="tiempo"></div>
+
+      <h4></h4>
+    </div>
+  </body>
+</html>
